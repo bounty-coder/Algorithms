@@ -1,0 +1,20 @@
+Given a Website , which is receiving a lot of clicks at any instant of time.
+You have to design a system that can give me:
+(Complexity required: O(1) time, O(1) Space)
+    1. No. of clicks in last minute
+    2. No. of clicks in last hour
+
+    3. No. of clicks in last day
+
+
+    We can simply use an array keeping a track of every second. 
+    The length of the array for 24 hours = 24 * 60 * 60. 
+    So we will have int[] clicksPerSec = new int[86400];
+
+To make it O(1) amortized(since summing) time to
+find the clicks in last minute/ hour/ day or any query in a range,
+ we can sum the clicks int the array arr[i] += arr[i-1] 
+ (note: here we can overflow the integer). 
+ So whenever we need to have the clicks for a 
+ specific second we return arr[second] - arr[second - 1]. 
+ For minutes we return arr[minute * 60] - arr[(minute - 1) * 60], etc..

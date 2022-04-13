@@ -1,0 +1,15 @@
+A Graph is a non-linear data structure consisting of finite set of nodes and edges.
+Graphs are used to represent networks. The networks may include paths 
+in a city or telephone network or circuit network. Graphs are also used
+in social networks like linkedIn, Facebook. 
+
+Two type: directed and undirected
+
+Two Representation:
+Adjacency List: An array of lists is used. Size of the array=number of vertices.
+An entry array[i] represents the list of vertices adjacent to the ith vertex.
+better for big V 
+
+Adjacency Matrix: 2D matrix(V*V) where 1 indicates that there is an edge betn nodes.
+easier to implement, removing edge takes O(1)
+consumes more space, adding vertex takes O(V^2)  better for less than V<10^5
