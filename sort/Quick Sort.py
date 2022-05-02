@@ -1,3 +1,21 @@
+# QuickSort is a Divide and Conquer algorithm. It picks an
+# element as pivot and partitions the given array around the picked pivot.
+
+# Always pick first element as pivot.
+# Always pick last element as pivot (implemented below)
+# Pick a random element as pivot.
+# Pick median as pivot.
+
+# The logic is simple, we start from the leftmost element and keep track
+# of index of smaller (or equal to) elements as i. While traversing,
+# if we find a smaller element, we swap current element with 
+# arr[i]. Otherwise we ignore current element. 
+
+# Not stable, Inplace(as it uses recursive space)
+# The worst case occurs when the partition process always picks
+#  greatest or smallest element as pivot. (if already sorted , O(n^2)) 
+
+#TC- O(nlogn)
 def swap(a,b):
     temp=a
     a=b
