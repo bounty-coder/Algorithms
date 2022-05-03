@@ -39,10 +39,10 @@ class Solution:
                     start=mid+1
                 elif arr[mid]<=arr[end]:
                     end=mid-1
-        print(pivot)
+        # print(pivot)
         one=self.binarysearch(arr,0,pivot-1,k)
         two=self.binarysearch(arr,pivot,n-1,k)
-        print(one,two)
+        # print(one,two)
         if one!=-1:
             return one
         elif two!=-1:
