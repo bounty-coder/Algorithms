@@ -1,5 +1,7 @@
 # Expectation is that you will ask for correct clarification
 #  or you will state your assumptions before you start coding.
+# Returns the index of the first occurrence of str(B) in str(A),
+# or -1 if needle is not part of haystack.
 
 def strStr( A, B):
     n=len(A)
