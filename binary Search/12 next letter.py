@@ -1,4 +1,6 @@
-
+# arr=[ a, b, e, f, j, l, m ]
+#Find next letter of f or h -> j
+# if target > last letter, then return first letter
 
 def nextGreatestLetter(letters, target):
     res=' '

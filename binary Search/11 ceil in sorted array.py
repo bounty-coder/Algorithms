@@ -1,6 +1,6 @@
 # returning the index ceil number
 
-def findFloor(arr,n,k):
+def findceil(arr,n,k):
     start,last=0,n-1
     res=-1
     while start<=last:
@@ -19,4 +19,4 @@ def findFloor(arr,n,k):
 arr=list(map(int,input("Enter a sorted array").split()))
 n=len(arr)
 k=int(input())
-print(findFloor(arr,n,k))
+print(findceil(arr,n,k))
