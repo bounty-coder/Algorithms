@@ -4,6 +4,9 @@
 
 # Given a string s, return true if it is a palindrome, or false otherwise.
 
+# Input: s = "A man, a plan, a canal: Panama"
+# Output: true
+# Explanation: "amanaplanacanalpanama" is a palindrome.
 
 class Solution:
     def isPalindrome(self, s: str) -> bool:
