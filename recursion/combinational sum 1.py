@@ -1,8 +1,12 @@
+# Given an array of candidate numbers A and a target number B,
+#  find all unique combinations in A where the 
+# candidate numbers sums to B.
+# The same repeated number may be chosen from A 
+# unlimited number of times.
 
 # A = [2, 3, 6, 7]
 # B = 7
 #target: [ [2, 2, 3] , [7] ]
-
 
 def solve(ip,op,B,ans,index):
     if B==0:
