@@ -47,3 +47,4 @@ if __name__=='__main__':
 	x,k = 20,2
 	n = len(arr)
 	printKclosest(arr, n, x, k)
+	# o/p - 17 20
