@@ -3,7 +3,8 @@
 # For example, if the input list is 1 2 3 4,
 #  the resulting list after swaps will be 2 1 4 3.
 
-
+import sys
+sys.setrecursionlimit(10**6)
 # Note: You need to swap the nodes, 
 # not only the data. 
 # If only data is swapped then driver will print -1.
