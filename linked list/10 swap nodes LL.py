@@ -100,5 +100,3 @@ llist.printList()
 llist.swapNodes(4, 3)
 print("\nLinked list after calling swapNodes() ")
 llist.printList()
-
-# This code is contributed by BHAVYA JAIN
