@@ -3,6 +3,8 @@
 #  such that 0 <= i < j < k < N and Ai < Aj < Ak.
 # If no such triplet exist return 0.
 
+
+
 from bisect import bisect_left
 def BinarySearch(a, x):
     i = bisect_left(a, x)
