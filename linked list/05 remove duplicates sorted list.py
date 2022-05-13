@@ -97,6 +97,3 @@ print("Linked List after removing",
 			"duplicate elements:")
 llist.removeDuplicates()
 llist.printList()
-
-# This code is contributed by
-# Dushyant Pathak.

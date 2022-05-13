@@ -74,5 +74,3 @@ llist.printList()
 llist.deleteNode(1)
 print ("\nLinked List after Deletion of 1:")
 llist.printList()
-
-# This code is contributed by Nikhil Kumar Singh (nickzuck_007)

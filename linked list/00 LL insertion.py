@@ -110,5 +110,3 @@ if __name__=='__main__':
 
 	print('Created linked list is: ')
 	llist.printList()
-
-# This code is contributed by Manikantan Narasimhan

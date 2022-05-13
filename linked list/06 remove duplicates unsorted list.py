@@ -24,8 +24,6 @@ class Solution:
 #  Driver Code Starts
 #Initial Template for Python 3
 
-#Contributed by : Nagendra Jha
-
 import atexit
 import io
 import sys
