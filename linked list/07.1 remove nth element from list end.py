@@ -10,6 +10,27 @@ class ListNode:
 # Approach 1: count total nodes, subtract n.
 # again traverse from start to total-n and remove 
 # that node.  TC- O(2n)
+def removeNthFromEnd( A, B):
+    length = 0
+    cur = A
+    while cur:     ##calculating the length of the list
+        length += 1
+        cur = cur.next
+    if B >= length:    ## if this is the case deleting the head node of the list
+        return A.next
+    n = length - B    ## calucalting the node to be removed from listhead (node index starts with 'zero')
+    count = 0
+    prev = None
+    cur = A
+    while count < n:
+        prev = cur
+        cur = cur.next
+        count += 1
+    if cur.next is not None:    ## cur is the node required to be removed
+        prev.next = cur.next    ## removing the cur node from list by linking the prev node directly to next of the cur node
+    else:
+        prev.next = None
+    return A 
  
 # Approach 2: 2 pointer approach TC-O(n)
 def removeNthFromEnd( head, n):
