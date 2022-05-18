@@ -6,7 +6,7 @@
 #steps:
 #  go to mid node
 #  reverse last half list
-#  taverse and check each element
+#  traverse and check each element
 
 # Definition for singly-linked list.
 # class ListNode(object):
