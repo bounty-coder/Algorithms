@@ -1,5 +1,7 @@
 # Given an integer x, find the square root of x. If x is
 #  not a perfect square, then return floor(√x).
+# Input 1: 11
+# Output 1: 3
 
 def floorSqrt(self, x): 
     #Your code here
