@@ -1,0 +1,17 @@
+A Heap is a special Tree-based data structure in which the tree is a complete binary tree.
+two types: Max-Heap & Min-Heap
+
+A binary heap is typically represented as an array.
+The root element will be at Arr[0].
+Arr[(i-1)/2]	Returns the parent node
+Arr[(2*i)+1]	Returns the left child node
+Arr[(2*i)+2]	Returns the right child node
+
+Insertion:
+1) Insert at the last avaible position
+2) a) Min-Heap
+Compare data we just inserted to parents data. If its less than the parents,
+we swap. Continue to do this until we reach the root node
+ b) Max-Heap
+Compare data we just inserted to parents data. If it's greater than the parents,
+ we swap. Continue to do this until we reach the root node
