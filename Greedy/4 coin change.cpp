@@ -1,8 +1,7 @@
 // coin change greedy
 // https://www.geeksforgeeks.org/problems/-minimum-number-of-coins4426/1
 
-//{ Driver Code Starts
-// Initial Template for C++
+// here anyhow, we can use greedy, because each denomination is less than or equal to half
 
 #include <bits/stdc++.h>
 using namespace std;
