@@ -15,7 +15,7 @@ class Solution {
         if(B==0){
             return A;
         }
-        gcd(B,A%B);
+        return gcd(B,A%B);
     }
     vector<long long> lcmAndGcd(long long A , long long B) {
         vector<long long> op;
