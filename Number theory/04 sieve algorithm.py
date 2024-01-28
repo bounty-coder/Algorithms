@@ -1,4 +1,6 @@
-
+'''Idea of seive of erasthanos is,
+   if you find any prime number then all the multiples of that prime number will be non-prime
+   and continue this marking till square root of N'''
 
 N=10**7
 # precompute prime numbers
@@ -8,9 +10,10 @@ isprime=[True for i in range(0,N)]
 isprime[0]=isprime[1]=False
 # start from 2 and mark down all the multiples as nonprime(false)
 # any number coming as not marked will be surely be prime 
-for i in range(2,N):
+i=2
+while i*i<=N:
     if isprime[i]==True:
-        j=2*i           # more optimise j=i*i
+        j=i*i
         while j<N:
             isprime[j]=False
             j+=i
