@@ -36,3 +36,35 @@ int MaxGcd(int n, int a[]) {
         }
     }
 }
+
+//Solution 2- Most efficient
+/* Idea is to use sieve of erasthanos type of algorithm
+    1) create a new array count with high+1, and fill with 0.
+    2) Fill count array indexes with (number of times the index present in given array)
+    3) Start from high to 1, if any element or multiple of that element is present that means that is the highest gcd(as we are moving from highest to lowest)*/
+
+    int MaxGcd(int n, int a[]) { 
+        if(n<=0) return 0;
+        int high=0;
+        for(int i=0;i<n;i++){
+            if(a[i]>high) high=a[i];
+        }
+        vector<int> count (high+1,0);
+        for(int i=0;i<n;i++){
+            count[a[i]]+=1;
+        }
+        int counter=0;
+        for(int i=high;i>0;i--){
+            int j=i;
+            while(j<=high){
+                if(count[j]>0){
+                    counter+=count[j];
+                }
+                if(counter>=2){
+                    return i;
+                }
+                j+=i;
+            }
+            counter=0;
+        }
+    }
