@@ -1,3 +1,10 @@
+# How does the deletion happens:
+''' Find the node to be deleted
+    Replace it with last deepest node's data
+    Delete the deepest node
+'''
+
+
 class node:
     def __init__(self,data):
         self.data=data
