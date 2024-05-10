@@ -12,6 +12,12 @@
 
 # similar to level order traversal just use flag 
 # for right to left traversing
+# if flag is True => Left to right, else Right to left
+# How to execute L->R or R->L? 
+# create a local list(for each level) and initialize it with 0.
+# Next Fillup accordingly, if L->R movement just insert elements straight, else insert them in reverse. 
+# Then append the list in 'ans' 
+
 # O(n)
 from collections import deque
 class Solution:
