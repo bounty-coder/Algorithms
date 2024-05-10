@@ -19,7 +19,7 @@ class Solution:
             return (0,float('-inf'))
       
         #l and r store maximum path sum going recursively through left and
-        #right subtrees of root(current node) respectively.
+        #right subtrees of root(current node) respectively.(basically max value in that subroot, or in simple->max height)
         l, l1 = self.findMaxUtil(root.left) 
         r, r1 = self.findMaxUtil(root.right)
           
@@ -41,3 +41,19 @@ class Solution:
         res = self.findMaxUtil(root) 
         #returning the result.
         return max(res)
+
+
+
+
+#same thing as above, just small code and did analogy with diameter of binary tree
+def findMaxSum(self, root): 
+    def dfs(root):
+        if not root:
+            return float("-inf"),0
+        #ld left diameter, lh left height
+        ld,lh=dfs(root.left)
+        rd,rh=dfs(root.right)
+        
+        return max(ld,rd,lh+rh+root.data,lh+root.data,rh+root.data,root.data), max(max(lh,rh)+root.data,root.data)
+    
+    return dfs(root)[0]
