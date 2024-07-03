@@ -17,6 +17,7 @@ while i*i<=N:
         while j<N:
             isprime[j]=False
             j+=i
+   i+=1
 #TC- n/2 + n/3 + n/4 +.....=nlogn
 # but here we have no non-primes
 # n/2 + n/3 + n/5 + n/7+.....= n(log(log n))
