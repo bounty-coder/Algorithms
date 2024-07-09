@@ -30,3 +30,28 @@ def find3Numbers(arr, n, x):
                 return 1
             s.add(arr[j])
     return 0
+
+#Method 2: Two Pointer
+'''
+First we will sort the array, and fix the first element
+Apply two pointer on rest of the array. 
+If sum==target then we will return all the three elements
+else if sum<target then we will increase the second element
+else we will decrease the last element
+'''
+def find3Numbers(arr, n, x):
+    if n<3:
+        return 0
+    arr.sort()
+    # target=0
+    for i in range(n-2):
+        j,k=i+1,n-1
+        while j<k:
+            s=arr[i]+arr[j]+arr[k]
+            if s==x:
+                return 1
+            elif s<x:
+                j+=1
+            else:
+                k-=1
+    return 0
