@@ -5,6 +5,13 @@
 
 
 #Method 1 : Hashing
+'''Fix the first element, the second will start from the first+1. 
+Then sum both first and second element and find the remaining sum.
+If remaining number is found in set then the triplet is available.
+
+TC- O(n^2)
+SC- O(n)   set is using extra space
+'''
 def find3Numbers(arr, n, x):
     if n<3:
         return 0
