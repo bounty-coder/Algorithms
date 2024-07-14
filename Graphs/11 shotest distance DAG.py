@@ -12,6 +12,8 @@
 
 #    https://www.geeksforgeeks.org/problems/shortest-path-in-weighted-undirected-graph/1
 
+''' solution is for undirected Graph '''
+
 # This is using Dijkstra's algo
 from typing import List
 import heapq
