@@ -1,5 +1,6 @@
-
-
+#similar to binary search we need to implement things
+#First, go to mid element. Then assign it mid element.
+# similarly go right and left, by dividing the vector in two. 
 
 class Node:
     def __init__(self, val):
