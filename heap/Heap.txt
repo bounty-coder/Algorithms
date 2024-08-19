@@ -8,10 +8,22 @@ Arr[(2*i)+1]	Returns the left child node
 Arr[(2*i)+2]	Returns the right child node
 
 Insertion:
-1) Insert at the last avaible position
+1) Insert at the last available position
 2) a) Min-Heap
 Compare data we just inserted to parents data. If its less than the parents,
 we swap. Continue to do this until we reach the root node
  b) Max-Heap
 Compare data we just inserted to parents data. If it's greater than the parents,
  we swap. Continue to do this until we reach the root node
+
+
+Implementation in python:
+
+import heapq   //importing heapq
+heapq.heapify(arr)    //defaultly min Heap
+heapq._heapify_max(arr)    //for max Heap 
+
+Trick: Also if we want heap max, we can negate every number and heapmin push
+
+heapq.heappush(arr,10)    //adding element
+heapq.heappop(arr)        //poping from head
