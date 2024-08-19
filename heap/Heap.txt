@@ -1,4 +1,4 @@
-A Heap is a special Tree-based data structure in which the tree is a complete binary tree.
+A Heap is a special Tree-based data structure in which the tree is a complete binary tree(except the last level, it may be or may not be)
 two types: Max-Heap & Min-Heap
 
 A binary heap is typically represented as an array.
