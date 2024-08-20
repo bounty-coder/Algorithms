@@ -27,3 +27,15 @@ Trick: Also if we want heap max, we can negate every number and heapmin push
 
 heapq.heappush(arr,10)    //adding element
 heapq.heappop(arr)        //poping from head
+
+
+
+
+
+Implementation in CPP:
+
+using STL priority queue
+
+priority_queue<int, vector<int> > maxHeap;        //defaultly it is max heap
+
+priority_queue<int, vector<int>, greater<int> > minHeap;        //will have to write a comparator
