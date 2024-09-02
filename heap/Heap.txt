@@ -16,6 +16,12 @@ we swap. Continue to do this until we reach the root node
 Compare data we just inserted to parents data. If it's greater than the parents,
  we swap. Continue to do this until we reach the root node
 
+Deletion:
+1) Replace the root or element to be deleted by the last element.
+2) Delete the last element from the Heap.
+3) Since, the last element is now placed at the position of the root node. 
+So, it may not follow the heap property. Therefore, heapify the last node placed at the position of root.
+
 Max number of elements at height h: 2^h
 Max elements in the entire tree:    (2^(h+1)) - 1
 height of tree = (log n)base 2
