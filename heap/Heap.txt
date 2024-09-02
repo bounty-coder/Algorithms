@@ -18,6 +18,7 @@ Compare data we just inserted to parents data. If it's greater than the parents,
 
 Max number of elements at height h: 2^h
 Max elements in the entire tree:    (2^(h+1)) - 1
+height of tree = (log n)base 2
 
 Implementation in python:
 
