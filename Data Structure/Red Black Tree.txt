@@ -1,0 +1,26 @@
+Red black tree is a specific type of binary search tree.
+It is balanced binary search tree.
+
+Criteria:
+1) Nodes are either black or red
+2) The root and leaves(NIL) are black
+3) If a node is red, then its children are black.
+4) All paths from a node to its NIL descendants contain the same number of nodes.
+
+More points:
+1) Nodes requires one storage bit to keep track of color
+2) Longest path is no more than twice of the shortest path.
+    - shortest path : all black nodes
+    - longest node  : alternating red and black
+
+We can do:
+Search - O(logn)
+Remove - O(logn)
+Insert - O(logn)
+
+Space complexity - O(n)
+
+
+Removing/ Inserting change the RB tree, and may voilate the property. To fix it, we rotate if violating
+1) Left rotate
+2) right rotate
