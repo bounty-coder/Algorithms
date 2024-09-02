@@ -16,6 +16,8 @@ we swap. Continue to do this until we reach the root node
 Compare data we just inserted to parents data. If it's greater than the parents,
  we swap. Continue to do this until we reach the root node
 
+Max number of elements at height h: 2^h
+Max elements in the entire tree:    (2^(h+1)) - 1
 
 Implementation in python:
 
