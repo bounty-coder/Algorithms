@@ -1,5 +1,22 @@
 # Given a binary tree, print it vertically.
 
+#   Input:         1
+#                   /    \ 
+#                 2      3
+#                / \   /   \
+#              4   5  6   7
+#                          /  \ 
+#                        8    9 
+
+# Output: 
+
+# 4
+# 2
+# 1 5 6
+# 3 8
+# 7
+# 9
+
 # Approach 
 # traverse the tree once and get the minimum and maximum horizontal
 #  distance with respect to root.
