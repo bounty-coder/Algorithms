@@ -45,6 +45,7 @@ Implementation in CPP:
 
 using STL priority queue
 #include <queue>
+priority_queue<int> pq;    // normal type
 
 priority_queue<int, vector<int> > maxHeap;        //defaultly it is max heap
 
