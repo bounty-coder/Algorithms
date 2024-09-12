@@ -42,6 +42,9 @@ heapq.heappop(arr)        //poping from head
 
 
 Implementation in CPP:
+-> Priority Queue is a container adaptor that provides constant time lookup of the largest or smallest element
+-> by default, vector is the container used inside.
+-> Cost of iteration and extration is logarithmic
 
 using STL priority queue
 #include <queue>
