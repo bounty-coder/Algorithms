@@ -2,6 +2,13 @@
 # Note: A province is a group of directly or indirectly connected
 #  cities and no other cities outside of the group.
 
+'''
+  1 --- 0           3
+  |                 |
+  |                 4
+  2
+'''
+
 def numProvinces(self, adj, V):
     # code here 
     def dfs(V,adj,i,visited):
